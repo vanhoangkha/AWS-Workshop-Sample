@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Secure Hybrid Access to S3 using VPC Endpoints</title>
+    <link>/</link>
+    <description>Recent content on Secure Hybrid Access to S3 using VPC Endpoints</description>
+    <generator>Hugo -- gohugo.io</generator><atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+  </channel>
+</rss>
