@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Chuẩn bị tài nguyên :: Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint</title>
 
     
-    <link href="/css/nucleus.css?1681626087" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1681626087" rel="stylesheet">
-    <link href="/css/hybrid.css?1681626087" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1681626087" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1681626087" rel="stylesheet">
-    <link href="/css/auto-complete.css?1681626087" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1681626087" rel="stylesheet">
-    <link href="/css/theme.css?1681626087" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1681626087" rel="stylesheet">
+    <link href="/css/nucleus.css?1733822950" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733822950" rel="stylesheet">
+    <link href="/css/hybrid.css?1733822950" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733822950" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733822950" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733822950" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733822950" rel="stylesheet">
+    <link href="/css/theme.css?1733822950" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733822950" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1681626087" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733822950" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1681626087"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733822950"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1681626087"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1681626087"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733822950"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733822950"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1681626087"></script>
+<script type="text/javascript" src="/js/search.js?1733822950"></script>
 
     
   </div>
@@ -260,7 +260,7 @@
   
     
     <li data-nav-id="/vi/4-s3-onprem/4.1-prepare/" title="Chuẩn bị tài nguyên" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -513,7 +513,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>16-04-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -622,12 +622,12 @@
 <li>Một Route 53 Inbound Resolver endpoint cho phép &ldquo;VPC Cloud&rdquo; giải quyết các yêu cầu resolve DNS gửi đến Private Hosted Zone</li>
 <li>Một Route 53 Outbound Resolver endpoint cho phép &ldquo;VPC On-prem&rdquo; chuyển tiếp các yêu cầu DNS cho S3 sang &ldquo;VPC Cloud&rdquo;</li>
 </ul>
-<p><img src="/images/4-onprem/route53.png?featherlight=false&amp;width=90pc" alt="route 53 diagram"></p>
+<p><img alt="route 53 diagram" src="/images/4-onprem/route53.png?featherlight=false&width=90pc"></p>
 <ol>
-<li>Click link sau để mở <a href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.amazonaws.com/reinvent-endpoints-builders-session/R53CF.yaml&amp;stackName=PLOnpremSetup">AWS CloudFormation console</a>. Mẫu yêu cầu sẽ được tải sẵn vào menu. Chấp nhận tất cả mặc định và nhấp vào Tạo stack.</li>
+<li>Click link sau để mở <a href="https://us-east-1.console.aws.amazon.com/cloudformation/home?region=us-east-1#/stacks/quickcreate?templateURL=https://s3.amazonaws.com/reinvent-endpoints-builders-session/R53CF.yaml&stackName=PLOnpremSetup">AWS CloudFormation console</a>. Mẫu yêu cầu sẽ được tải sẵn vào menu. Chấp nhận tất cả mặc định và nhấp vào Tạo stack.</li>
 </ol>
-<p><img src="/images/4-onprem/create-stack.png?featherlight=false&amp;width=90pc" alt="Create stack"></p>
-<p><img src="/images/4-onprem/create-stack-button.png?featherlight=false&amp;width=90pc" alt="Button"></p>
+<p><img alt="Create stack" src="/images/4-onprem/create-stack.png?featherlight=false&width=90pc"></p>
+<p><img alt="Button" src="/images/4-onprem/create-stack-button.png?featherlight=false&width=90pc"></p>
 <p>Có thể mất vài phút để triển khai stack hoàn tất. Bạn có thể tiếp tục với bước tiếp theo mà không cần đợi quá trình triển khai kết thúc.</p>
 <h4 id="cập-nhật-bảng-định-tuyến-private-on-premise">Cập nhật bảng định tuyến private on-premise</h4>
 <p>Workshop này sử dụng StrongSwan VPN chạy trên EC2 instance để mô phỏng khả năng kết nối giữa trung tâm dữ liệu truyền thống và môi trường cloud AWS. Hầu hết các thành phần bắt buộc đều được cung cấp trước khi bạn bắt đầu. Để hoàn tất cấu hình VPN, bạn sẽ sửa đổi bảng định tuyến &ldquo;VPC on-prem&rdquo; để hướng lưu lượng đến cloud đi qua StrongSwan VPN instance.</p>
@@ -639,7 +639,7 @@
 <p>Chọn instance tên infra-vpngw-test. Từ Details tab, copy Instance ID và paste vào text editor của bạn để sử dụng ở những bước tiếp theo</p>
 </li>
 </ol>
-<p><img src="/images/4-onprem/ec2-onprem-id.png?featherlight=false&amp;width=90pc" alt="ec2 id"></p>
+<p><img alt="ec2 id" src="/images/4-onprem/ec2-onprem-id.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>
 <p>Đi đến VPC menu bằng cách gõ &ldquo;VPC&rdquo; vào Search box</p>
@@ -648,7 +648,7 @@
 <p>Click vào Route Tables, chọn RT Private On-prem route table, chọn Routes tab, và click Edit Routes.</p>
 </li>
 </ol>
-<p><img src="/images/4-onprem/rt.png?featherlight=false&amp;width=90pc" alt="rt"></p>
+<p><img alt="rt" src="/images/4-onprem/rt.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Click Add route.</li>
 </ol>
@@ -656,7 +656,7 @@
 <li>Destination: CIDR block của Cloud VPC</li>
 <li>Target: ID của infra-vpngw-test instance (bạn đã lưu lại ở bước trên)</li>
 </ul>
-<p><img src="/images/4-onprem/add-route.png?featherlight=false&amp;width=90pc" alt="add route"></p>
+<p><img alt="add route" src="/images/4-onprem/add-route.png?featherlight=false&width=90pc"></p>
 <ol start="6">
 <li>Click Save changes</li>
 </ol>
@@ -921,19 +921,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1681626087"></script>
-    <script src="/js/perfect-scrollbar.min.js?1681626087"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1681626087"></script>
-    <script src="/js/jquery.sticky.js?1681626087"></script>
-    <script src="/js/featherlight.min.js?1681626087"></script>
-    <script src="/js/highlight.pack.js?1681626087"></script>
+    <script src="/js/clipboard.min.js?1733822950"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733822950"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733822950"></script>
+    <script src="/js/jquery.sticky.js?1733822950"></script>
+    <script src="/js/featherlight.min.js?1733822950"></script>
+    <script src="/js/highlight.pack.js?1733822950"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1681626087"></script>
-    <script src="/js/learn.js?1681626087"></script>
-    <script src="/js/hugo-learn.js?1681626087"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733822950"></script>
+    <script src="/js/learn.js?1733822950"></script>
+    <script src="/js/hugo-learn.js?1733822950"></script>
 
-    <link href="/mermaid/mermaid.css?1681626087" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1681626087"></script>
+    <link href="/mermaid/mermaid.css?1733822950" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733822950"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

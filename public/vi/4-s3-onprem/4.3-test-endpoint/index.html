@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Kiểm tra Interface Endpoint :: Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint</title>
 
     
-    <link href="/css/nucleus.css?1681626087" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1681626087" rel="stylesheet">
-    <link href="/css/hybrid.css?1681626087" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1681626087" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1681626087" rel="stylesheet">
-    <link href="/css/auto-complete.css?1681626087" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1681626087" rel="stylesheet">
-    <link href="/css/theme.css?1681626087" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1681626087" rel="stylesheet">
+    <link href="/css/nucleus.css?1733822950" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733822950" rel="stylesheet">
+    <link href="/css/hybrid.css?1733822950" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733822950" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733822950" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733822950" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733822950" rel="stylesheet">
+    <link href="/css/theme.css?1733822950" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733822950" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1681626087" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733822950" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1681626087"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733822950"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1681626087"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1681626087"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733822950"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733822950"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1681626087"></script>
+<script type="text/javascript" src="/js/search.js?1733822950"></script>
 
     
   </div>
@@ -316,7 +316,7 @@
   
     
     <li data-nav-id="/vi/4-s3-onprem/4.3-test-endpoint/" title="Kiểm tra Interface Endpoint" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -513,7 +513,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>16-04-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -618,7 +618,7 @@
 <p>Click tên của endpoint chúng ta mới tạo ở mục 4.2: s3-interface-endpoint. Click details và lưu lại regional DNS name của endpoint (cái đầu tiên) vào text-editor của bạn để dùng ở các bước sau.</p>
 </li>
 </ol>
-<p><img src="/images/4-onprem/dns.png?featherlight=false&amp;width=90pc" alt="dns name"></p>
+<p><img alt="dns name" src="/images/4-onprem/dns.png?featherlight=false&width=90pc"></p>
 <h4 id="kết-nối-đến-ec2-instance-ở-trong-vpc-on-prem-giả-lập-môi-trường-truyền-thống">Kết nối đến EC2 instance ở trong &ldquo;VPC On-prem&rdquo; (giả lập môi trường truyền thống)</h4>
 <ol>
 <li>
@@ -628,7 +628,7 @@
 <p>Click <strong>Start Session</strong>, chọn EC2 instance có tên <strong>Test-Interface-Endpoint</strong>. EC2 instance này đang chạy trên &ldquo;VPC On-prem&rdquo; và sẽ được sử dụng để kiểm tra kết nối đến Amazon S3 thông qua Interface endpoint. Session Manager sẽ mở 1 browser tab mới với shell prompt: <strong>sh-4.2 $</strong></p>
 </li>
 </ol>
-<p><img src="/images/4-onprem/start-session.png?featherlight=false&amp;width=90pc" alt="Start session"></p>
+<p><img alt="Start session" src="/images/4-onprem/start-session.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>
 <p>Đi đến ssm-user&rsquo;s home directory với lệnh &ldquo;cd ~&rdquo;</p>
@@ -638,7 +638,7 @@
 </li>
 </ol>
 <pre tabindex="0"><code>fallocate -l 1G testfile2.xyz
-</code></pre><p><img src="/images/4-onprem/cli1.png?featherlight=false&amp;width=90pc" alt="user"></p>
+</code></pre><p><img alt="user" src="/images/4-onprem/cli1.png?featherlight=false&width=90pc"></p>
 <ol start="5">
 <li>Copy file vào S3 bucket mình tạo ở section 4.2</li>
 </ol>
@@ -648,7 +648,7 @@
 <li>Không lấy &rsquo; * &rsquo; khi copy/paste tên DNS khu vực.</li>
 <li>Cung cấp tên S3 bucket của bạn</li>
 </ul>
-<p><img src="/images/4-onprem/cli2.png?featherlight=false&amp;width=90pc" alt="copy file"></p>
+<p><img alt="copy file" src="/images/4-onprem/cli2.png?featherlight=false&width=90pc"></p>
 <p>Bây giờ tệp đã được thêm vào bộ chứa S3 của bạn. Hãy kiểm tra bộ chứa S3 của bạn trong bước tiếp theo.</p>
 <h4 id="kiểm-tra-object-trong-s3-bucket">Kiểm tra Object trong S3 bucket</h4>
 <ol>
@@ -656,7 +656,7 @@
 <li>Click Buckets</li>
 <li>Click tên bucket của bạn và bạn sẽ thấy testfile2.xyz đã được thêm vào s3 bucket của bạn</li>
 </ol>
-<p><img src="/images/4-onprem/check-bucket.png?featherlight=false&amp;width=90pc" alt="check bucket"></p>
+<p><img alt="check bucket" src="/images/4-onprem/check-bucket.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -921,19 +921,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1681626087"></script>
-    <script src="/js/perfect-scrollbar.min.js?1681626087"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1681626087"></script>
-    <script src="/js/jquery.sticky.js?1681626087"></script>
-    <script src="/js/featherlight.min.js?1681626087"></script>
-    <script src="/js/highlight.pack.js?1681626087"></script>
+    <script src="/js/clipboard.min.js?1733822950"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733822950"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733822950"></script>
+    <script src="/js/jquery.sticky.js?1733822950"></script>
+    <script src="/js/featherlight.min.js?1733822950"></script>
+    <script src="/js/highlight.pack.js?1733822950"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1681626087"></script>
-    <script src="/js/learn.js?1681626087"></script>
-    <script src="/js/hugo-learn.js?1681626087"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733822950"></script>
+    <script src="/js/learn.js?1733822950"></script>
+    <script src="/js/hugo-learn.js?1733822950"></script>
 
-    <link href="/mermaid/mermaid.css?1681626087" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1681626087"></script>
+    <link href="/mermaid/mermaid.css?1733822950" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733822950"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>

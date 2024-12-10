@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="generator" content="Hugo 0.99.1" />
+    <meta name="generator" content="Hugo 0.133.0">
     <meta name="description" content="">
 <meta name="author" content="journeyoftheaverageguy@gmail.com">
 
@@ -12,21 +12,21 @@
     <title>Tạo một Gateway Endpoint :: Đảm bảo truy cập Hybrid an toàn đến S3 bằng cách sử dụng VPC endpoint</title>
 
     
-    <link href="/css/nucleus.css?1681626087" rel="stylesheet">
-    <link href="/css/fontawesome-all.min.css?1681626087" rel="stylesheet">
-    <link href="/css/hybrid.css?1681626087" rel="stylesheet">
-    <link href="/css/featherlight.min.css?1681626087" rel="stylesheet">
-    <link href="/css/perfect-scrollbar.min.css?1681626087" rel="stylesheet">
-    <link href="/css/auto-complete.css?1681626087" rel="stylesheet">
-    <link href="/css/atom-one-dark-reasonable.css?1681626087" rel="stylesheet">
-    <link href="/css/theme.css?1681626087" rel="stylesheet">
-    <link href="/css/hugo-theme.css?1681626087" rel="stylesheet">
+    <link href="/css/nucleus.css?1733822950" rel="stylesheet">
+    <link href="/css/fontawesome-all.min.css?1733822950" rel="stylesheet">
+    <link href="/css/hybrid.css?1733822950" rel="stylesheet">
+    <link href="/css/featherlight.min.css?1733822950" rel="stylesheet">
+    <link href="/css/perfect-scrollbar.min.css?1733822950" rel="stylesheet">
+    <link href="/css/auto-complete.css?1733822950" rel="stylesheet">
+    <link href="/css/atom-one-dark-reasonable.css?1733822950" rel="stylesheet">
+    <link href="/css/theme.css?1733822950" rel="stylesheet">
+    <link href="/css/hugo-theme.css?1733822950" rel="stylesheet">
     
-    <link href="/css/theme-workshop.css?1681626087" rel="stylesheet">
+    <link href="/css/theme-workshop.css?1733822950" rel="stylesheet">
     
     
 
-    <script src="/js/jquery-3.3.1.min.js?1681626087"></script>
+    <script src="/js/jquery-3.3.1.min.js?1733822950"></script>
 
     <style>
       :root #header + #content > #left > #rlblock_left{
@@ -57,14 +57,14 @@
     <span data-search-clear=""><i class="fas fa-times"></i></span>
 </div>
 
-<script type="text/javascript" src="/js/lunr.min.js?1681626087"></script>
-<script type="text/javascript" src="/js/auto-complete.js?1681626087"></script>
+<script type="text/javascript" src="/js/lunr.min.js?1733822950"></script>
+<script type="text/javascript" src="/js/auto-complete.js?1733822950"></script>
 <script type="text/javascript">
     
-        var baseurl = "\/vi";
+        var baseurl = "\/\/vi";
     
 </script>
-<script type="text/javascript" src="/js/search.js?1681626087"></script>
+<script type="text/javascript" src="/js/search.js?1733822950"></script>
 
     
   </div>
@@ -166,7 +166,7 @@
   
     
     <li data-nav-id="/vi/3-s3-vpc/3.1-create-gwe/" title="Tạo một Gateway Endpoint" class="dd-item 
-        parent
+        
         active
         
         ">
@@ -513,7 +513,7 @@
     <br>
     <br>
         <b> Last Updated </b> <br>
-        <i><font color=orange>16-04-2023</font></i>
+        <i><font color=orange>10-12-2024</font></i>
     </left>
     <left>
         <br>
@@ -609,7 +609,7 @@
 <div class="notices note" ><p>Bạn sẽ thấy 6 điểm cuối VPC hiện có hỗ trợ AWS Systems Manager (SSM). Các điểm cuối này được Mẫu CloudFormation triển khai tự động cho workshop này.</p>
 </div>
 
-<p><img src="/images/s3-vpc/endpoints.png?featherlight=false&amp;width=90pc" alt="endpoint"></p>
+<p><img alt="endpoint" src="/images/s3-vpc/endpoints.png?featherlight=false&width=90pc"></p>
 <ol start="3">
 <li>Trong Create endpoint console:</li>
 </ol>
@@ -617,25 +617,25 @@
 <li>Đặt tên cho endpoint: s3-gwe</li>
 <li>Trong service category, chọn <strong>aws services</strong></li>
 </ul>
-<p><img src="/images/s3-vpc/create-s3-gwe1.png?featherlight=false&amp;width=90pc" alt="endpoint"></p>
+<p><img alt="endpoint" src="/images/s3-vpc/create-s3-gwe1.png?featherlight=false&width=90pc"></p>
 <ul>
 <li>Trong <strong>Services</strong>, gõ &ldquo;s3&rdquo; trong hộp tìm kiếm và chọn dịch vụ với loại <strong>gateway</strong></li>
 </ul>
-<p><img src="/images/s3-vpc/services.png?featherlight=false&amp;width=90pc" alt="endpoint"></p>
+<p><img alt="endpoint" src="/images/s3-vpc/services.png?featherlight=false&width=90pc"></p>
 <ul>
 <li>Đối với VPC, chọn <strong>VPC Cloud</strong> từ drop-down menu.</li>
 <li>Đối với Route tables, chọn bảng định tuyến mà đã liên kết với 2 subnets (lưu ý: đây không phải là bảng định tuyến chính cho VPC mà là bảng định tuyến thứ hai do CloudFormation tạo).</li>
 </ul>
-<p><img src="/images/s3-vpc/vpc.png?featherlight=false&amp;width=90pc" alt="endpoint"></p>
+<p><img alt="endpoint" src="/images/s3-vpc/vpc.png?featherlight=false&width=90pc"></p>
 <ul>
 <li>Đối với Policy, để tùy chọn mặc định là Full access để cho phép toàn quyền truy cập vào dịch vụ. Bạn sẽ triển khai VPC endpoint policy trong phần sau để chứng minh việc hạn chế quyền truy cập vào S3 bucket dựa trên các policies.</li>
 </ul>
-<p><img src="/images/s3-vpc/policy.png?featherlight=false&amp;width=90pc" alt="endpoint"></p>
+<p><img alt="endpoint" src="/images/s3-vpc/policy.png?featherlight=false&width=90pc"></p>
 <ul>
 <li>Không thêm tag vào VPC endpoint.</li>
 <li>Click Create endpoint, click x sau khi nhận được thông báo tạo thành công.</li>
 </ul>
-<p><img src="/images/s3-vpc/complete.png?featherlight=false&amp;width=90pc" alt="endpoint"></p>
+<p><img alt="endpoint" src="/images/s3-vpc/complete.png?featherlight=false&width=90pc"></p>
 
 
 
@@ -897,19 +897,19 @@
     <div style="left: -1000px; overflow: scroll; position: absolute; top: -1000px; border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;">
       <div style="border: none; box-sizing: content-box; height: 200px; margin: 0px; padding: 0px; width: 200px;"></div>
     </div>
-    <script src="/js/clipboard.min.js?1681626087"></script>
-    <script src="/js/perfect-scrollbar.min.js?1681626087"></script>
-    <script src="/js/perfect-scrollbar.jquery.min.js?1681626087"></script>
-    <script src="/js/jquery.sticky.js?1681626087"></script>
-    <script src="/js/featherlight.min.js?1681626087"></script>
-    <script src="/js/highlight.pack.js?1681626087"></script>
+    <script src="/js/clipboard.min.js?1733822950"></script>
+    <script src="/js/perfect-scrollbar.min.js?1733822950"></script>
+    <script src="/js/perfect-scrollbar.jquery.min.js?1733822950"></script>
+    <script src="/js/jquery.sticky.js?1733822950"></script>
+    <script src="/js/featherlight.min.js?1733822950"></script>
+    <script src="/js/highlight.pack.js?1733822950"></script>
     <script>hljs.initHighlightingOnLoad();</script>
-    <script src="/js/modernizr.custom-3.6.0.js?1681626087"></script>
-    <script src="/js/learn.js?1681626087"></script>
-    <script src="/js/hugo-learn.js?1681626087"></script>
+    <script src="/js/modernizr.custom-3.6.0.js?1733822950"></script>
+    <script src="/js/learn.js?1733822950"></script>
+    <script src="/js/hugo-learn.js?1733822950"></script>
 
-    <link href="/mermaid/mermaid.css?1681626087" rel="stylesheet" />
-    <script src="/mermaid/mermaid.js?1681626087"></script>
+    <link href="/mermaid/mermaid.css?1733822950" rel="stylesheet" />
+    <script src="/mermaid/mermaid.js?1733822950"></script>
     <script>
         mermaid.initialize({ startOnLoad: true });
     </script>
