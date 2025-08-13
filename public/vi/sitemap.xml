@@ -2,184 +2,184 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>/vi/4-s3-onprem/4.1-prepare/</loc>
+    <loc>//localhost:1313/vi/4-s3-onprem/4.1-prepare/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-s3-onprem/4.1-prepare/"
+                href="//localhost:1313/4-s3-onprem/4.1-prepare/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-s3-onprem/4.1-prepare/"
+                href="//localhost:1313/vi/4-s3-onprem/4.1-prepare/"
                 />
   </url><url>
-    <loc>/vi/</loc>
+    <loc>//localhost:1313/vi/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/"
+                href="//localhost:1313/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/"
+                href="//localhost:1313/vi/"
                 />
   </url><url>
-    <loc>/vi/1-workshop-overview/</loc>
+    <loc>//localhost:1313/vi/1-workshop-overview/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/1-workshop-overview/"
+                href="//localhost:1313/1-workshop-overview/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/1-workshop-overview/"
+                href="//localhost:1313/vi/1-workshop-overview/"
                 />
   </url><url>
-    <loc>/vi/3-s3-vpc/3.1-create-gwe/</loc>
+    <loc>//localhost:1313/vi/3-s3-vpc/3.1-create-gwe/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-s3-vpc/3.1-create-gwe/"
+                href="//localhost:1313/3-s3-vpc/3.1-create-gwe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-s3-vpc/3.1-create-gwe/"
+                href="//localhost:1313/vi/3-s3-vpc/3.1-create-gwe/"
                 />
   </url><url>
-    <loc>/vi/2-prerequiste/</loc>
+    <loc>//localhost:1313/vi/2-prerequiste/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/2-prerequiste/"
+                href="//localhost:1313/2-prerequiste/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/2-prerequiste/"
+                href="//localhost:1313/vi/2-prerequiste/"
                 />
   </url><url>
-    <loc>/vi/3-s3-vpc/3.2-test-gwe/</loc>
+    <loc>//localhost:1313/vi/3-s3-vpc/3.2-test-gwe/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-s3-vpc/3.2-test-gwe/"
+                href="//localhost:1313/3-s3-vpc/3.2-test-gwe/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-s3-vpc/3.2-test-gwe/"
+                href="//localhost:1313/vi/3-s3-vpc/3.2-test-gwe/"
                 />
   </url><url>
-    <loc>/vi/4-s3-onprem/4.2-create-interface-enpoint/</loc>
+    <loc>//localhost:1313/vi/4-s3-onprem/4.2-create-interface-enpoint/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-s3-onprem/4.2-create-interface-enpoint/"
+                href="//localhost:1313/4-s3-onprem/4.2-create-interface-enpoint/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-s3-onprem/4.2-create-interface-enpoint/"
+                href="//localhost:1313/vi/4-s3-onprem/4.2-create-interface-enpoint/"
                 />
   </url><url>
-    <loc>/vi/4-s3-onprem/4.3-test-endpoint/</loc>
+    <loc>//localhost:1313/vi/4-s3-onprem/4.3-test-endpoint/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-s3-onprem/4.3-test-endpoint/"
+                href="//localhost:1313/4-s3-onprem/4.3-test-endpoint/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-s3-onprem/4.3-test-endpoint/"
+                href="//localhost:1313/vi/4-s3-onprem/4.3-test-endpoint/"
                 />
   </url><url>
-    <loc>/vi/3-s3-vpc/</loc>
+    <loc>//localhost:1313/vi/3-s3-vpc/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/3-s3-vpc/"
+                href="//localhost:1313/3-s3-vpc/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/3-s3-vpc/"
+                href="//localhost:1313/vi/3-s3-vpc/"
                 />
   </url><url>
-    <loc>/vi/4-s3-onprem/4.4-dns-simulation/</loc>
+    <loc>//localhost:1313/vi/4-s3-onprem/4.4-dns-simulation/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-s3-onprem/4.4-dns-simulation/"
+                href="//localhost:1313/4-s3-onprem/4.4-dns-simulation/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-s3-onprem/4.4-dns-simulation/"
+                href="//localhost:1313/vi/4-s3-onprem/4.4-dns-simulation/"
                 />
   </url><url>
-    <loc>/vi/4-s3-onprem/</loc>
+    <loc>//localhost:1313/vi/4-s3-onprem/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/4-s3-onprem/"
+                href="//localhost:1313/4-s3-onprem/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/4-s3-onprem/"
+                href="//localhost:1313/vi/4-s3-onprem/"
                 />
   </url><url>
-    <loc>/vi/5-policy/</loc>
+    <loc>//localhost:1313/vi/5-policy/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/5-policy/"
+                href="//localhost:1313/5-policy/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/5-policy/"
+                href="//localhost:1313/vi/5-policy/"
                 />
   </url><url>
-    <loc>/vi/6-cleanup/</loc>
+    <loc>//localhost:1313/vi/6-cleanup/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/6-cleanup/"
+                href="//localhost:1313/6-cleanup/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/6-cleanup/"
+                href="//localhost:1313/vi/6-cleanup/"
                 />
   </url><url>
-    <loc>/vi/categories/</loc>
+    <loc>//localhost:1313/vi/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/categories/"
+                href="//localhost:1313/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/categories/"
+                href="//localhost:1313/vi/categories/"
                 />
   </url><url>
-    <loc>/vi/tags/</loc>
+    <loc>//localhost:1313/vi/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en"
-                href="/tags/"
+                href="//localhost:1313/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="vi"
-                href="/vi/tags/"
+                href="//localhost:1313/vi/tags/"
                 />
   </url>
 </urlset>
